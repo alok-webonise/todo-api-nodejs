@@ -13,7 +13,7 @@ var bluebird = require('bluebird')
 
 
 var app = express();
-var mongoHost = app.get('MONGO_HOST')
+var mongoHost = process.env.MONGO_HOST
 
 var mongoose = require('mongoose')
 mongoose.Promise = bluebird
